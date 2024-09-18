@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import HorizontalCard from "../components/HorizontalCard.astro"
+import TimeLineElement from "../components/cv/TimeLine.astro"
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hello and thank you for visiting.</div>
+    <div class="text-5xl font-bold">I'm Vittal Kumaar</div>
+    <div class="text-3xl py-3 font-bold">IT Graduate Leaping into Data Science</div>
+    <div class="py-2 w-full">
+      <p class="text-lg text-justify">
+        Driven by a passion for innovation, I aim to contribute to cutting-edge research in data science, AI, and machine learning, focusing on
+        solving real-world challenges. I seek to further my knowledge in a research-oriented master's program where I can leverage my academic
+        achievements and project experience to make meaningful advancements in the field.
+      </p>
+    </div>
+    <div class="mt-8">
+      <a
+        class="btn"
+        href="https:www.linkedin.com/in/vittal-kumaar"
+        target="_blank"
+      >
+      I'd appreciate connecting</a
+      >
+    </div>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10 ml-5">
+    <TimeLineElement
+      title="Higher Education"
+      subtitle="Bachelor of Technology (2020-2024) at Sethu Institute of Technology, Pulloor, Kariapatti, Madurai, Tamil Nadu, India."
+    />
+    <TimeLineElement
+      title="Primary education"
+      subtitle="The TVS School, Madurai,Tamil Nadu, India (2006 to 2020)."
+    />
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="SpaceX IBM Data Science Final Capstone"
+    img="/public/spacex.jpg"
+    desc="A comprehensive data analysis and machine learning endeavor that incorporates multiple stages of data processing and visualization. This project includes data collection, wrangling, exploratory data analysis (EDA), and machine learning prediction to analyze and gain insights from SpaceX launch data."
+    url="https://github.com/v1ttal/SpaceX_IBM_Data_Sciene_FInal_Capstone.git"
+    badge="NEW"
+    tags={["Python","Pandas","Matplotlib", "Seaborn","Folium","SQL","Machine Learning"]}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Crop Yeild Prediction"
+    img="/public/agri.jpg"
+    desc="Its a web-based application designed to recommend suitable crops based on soil and weather conditions. The system aims to minimize human errors and provide accurate, real-time recommendations to assist farmers in selecting the best crops for their specific environment."
+    url="https://github.com/v1ttal/crop_prediction_prediction.git"
+    badge="NEW"
+    tags={["Python", "Scikit-Learn", "Django", "Machine Learning","SQL"]}
+  />
+  <div class="divider my-0"></div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold mt-5">Technical Proficiency</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+    <li>HTML, CSS and JavaScript</li>
+    <li>AstroJS</li>
+    <li>C,C++ and C#</li>
+    <li>SQL</li>
+    <li>Python</li>
+    <li>Machine Learning</li>
+    <li>Data Science Tools</li>
+    <li>Designing Tools</li>
+</ul>
+
+<div class="mt-10 mb-5">
+    <div class="text-3xl w-full font-bold">Professional Certifications</div>
+</div>
+
+<ul class="list-disc mx-10 mb-2 grid gap-2 underline underline-offset-1">
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/XAL5GCOAUP0B" target="_blank">
+            IBM Data Science Specialization
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/QXRUCA69AJTU" target="_blank">
+            Google UX Design Specialization
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/EA5QDERANWBC" target="_blank">
+            Introduction to User Experience Design by Georgia Institute of Technology
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/WSKFGL2GN3LQ" target="_blank">
+            Getting Started with Git and GitHub
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/3ZKKEHDNMGWV" target="_blank">
+            Introduction to Cloud Computing
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/4FCS8LFWEJR8" target="_blank">
+            Developing Cloud Native Application
+        </a>
+    </li>
+    <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/Z986WGT6SZ5K" target="_blank">
+            Introduction to Web Development with HTML, CSS, JavaScript
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/posts/vittal-kumaar_infosys-infosysspringboard-techjourney-activity-7235288701822476288-vzGa?utm_source=share&utm_medium=member_desktop" target="_blank">
+            Infosys Springboard certificates
+        </a>
+    </li>
+</ul>
+
+</BaseLayout>
