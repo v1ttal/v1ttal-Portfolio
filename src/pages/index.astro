@@ -51,14 +51,21 @@ import TimeLineElement from "../components/cv/TimeLine.astro"
     <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
-  <HorizontalCard
-    title="SpaceX IBM Data Science Final Capstone"
-    img="/spacex.jpg"
-    desc="A comprehensive data analysis and machine learning endeavor that incorporates multiple stages of data processing and visualization. This project includes data collection, wrangling, exploratory data analysis (EDA), and machine learning prediction to analyze and gain insights from SpaceX launch data."
-    url="https://github.com/v1ttal/SpaceX_IBM_Data_Sciene_FInal_Capstone.git"
-    badge="NEW"
-    tags={["Python","Pandas","Matplotlib", "Seaborn","Folium","SQL","Machine Learning"]}
+    <HorizontalCard
+    title="MSc Dissertation: ML–Interpolation for Pharmaceutical Manufacturing"
+    desc="Predicting Mean Residence Time (MRT) in Twin-Screw Granulation when experimental data is scarce and expensive. I built a two-stage framework that used 24 physical observations as anchor data, held out test blocks before interpolation, and generated denser datasets using RBF, Matérn Gaussian Process Regression and penalised P-splines. I then evaluated NARX, Dual NARX, Ridge-ARX and RBF-SVR-ARX models, studied how interpolation density affects accuracy, and assessed results with RMSE, MAE, R² and error analysis. The project took me from literature and process understanding through to implementation, critical evaluation and scientific reporting."
+    badge="THESIS"
+    tags={["Python", "Gaussian Process Regression", "P-splines", "NARX", "SVR", "Ridge Regression", "Process Modelling"]}
   />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="M5 Sales Forecasting: End-to-End ML Pipeline"
+    desc="Predicting how much of each product will sell, in each store, next month: the line between empty shelves and dead stock. With my classmates, I built a scalable pipeline on the M5 Forecasting (Kaggle) dataset to forecast monthly item-store sales. We engineered features across hierarchical sales, calendar and pricing data, trained LightGBM and Gradient Boosted Trees, and focused evaluation on business-ready accuracy for inventory and marketing decisions, not just leaderboard scores."
+    badge="TEAM PROJECT"
+    tags={["Databricks", "PySpark", "LightGBM", "Gradient Boosted Trees", "Feature Engineering", "Time Series"]}
+  />
+  <div class="divider my-0"></div> 
+  
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Crop Yeild Prediction"
