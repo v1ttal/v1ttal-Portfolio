@@ -16,19 +16,19 @@ const activeClass = "bg-base-300"
   <li>
     <a
       class="py-3 text-base"
-      href="mailto:Vittalkumaar0@gmail.com"
+      href="mailto:Vittalkumaar@gmail.com"
       target="_blank"
       referrerpolicy="no-referrer-when-downgrade">Contact</a
     >
   </li>
 </ul>
 
-<script
-  define:vars={{
-    sideBarActiveItemID: sideBarActiveItemID,
-    activeClass: activeClass,
-  }}
->
-  const activeItemElem = document.getElementById(sideBarActiveItemID)
-  activeItemElem.classList.add(activeClass)
-</script>
+   <script
+     define:vars={{
+       sideBarActiveItemID: sideBarActiveItemID,
+       activeClass: activeClass,
+     }}
+   >
+     const activeItemElem = document.getElementById(sideBarActiveItemID)
+     if (activeItemElem) activeItemElem.classList.add(activeClass)
+   </script>
